@@ -43,7 +43,28 @@
  <p> <button class="btn" onclick="document.location='bmw.html'" > <img src="pics/bmw.png" alt="bmw" height="80%" width="60%"> </button>
      <button class="btn2" onclick="document.location='audi.html'"> <img src="pics/audi.png" alt="audi" height="80%" width="60%" > </button> </p>
 </section>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+</head>
+<body>
 
+<h2>Форма обратной связи</h2>
+
+<form action="send_mail.php" method="post">
+    <label for="name">Имя:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="message">Сообщение:</label><br>
+    <textarea id="message" name="message" required></textarea><br>
+    
+    <input type="submit" value="Отправить">
+</form>
+
+</body>
 
 <footer>
     <p>&copy; 2024 Автосалон. Все права защищены.</p>
