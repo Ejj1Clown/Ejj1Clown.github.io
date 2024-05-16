@@ -1,11 +1,44 @@
 <html>
- <head>  
-  <title>Carhave</title>
- </head>
- <body>
-  <h1 align="center">Уважаемый покупатель, добро пожаловать в автосалон Carhave </h1>
-  <h2 align="center">Выберите необходимую марку</h2>
-  <p> <button onclick="document.location='bmw.html'" style="size: height 15px; width 10px;"> <img src="pics/bmw.png" alt="bmw" height="30%" width="10%"> </button> 
-</p>
- </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, nav, section, footer { margin: 20px; padding: 10px; }
+        nav { background: #333; color: white; }
+        nav ul { list-style-type: none; }
+        nav ul li { display: inline; margin-right: 10px; }
+        nav a { color: white; text-decoration: none; }
+        footer { background: #333; color: white; text-align: center; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в Автосалон</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#cars">Автомобили</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+    </ul>
+</nav>
+
+
+<section id="cars">
+    <h2>Автомобили</h2>
+ <p> <button onclick="document.location='bmw.html'" style="size: height 15px; width 10px;"> <img src="pics/bmw.png" alt="bmw" height="30%" width="10%"> </button>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Автосалон. Все права защищены.</p>
+</footer>
+
+</body>
 </html>
