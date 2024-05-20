@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -12,15 +12,19 @@
         nav ul li { display: inline; margin-right: 10px; }
         nav a { color: white; text-decoration: none; }
         footer { background: #333; color: white; text-align: center; }
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
         .btn {
-    width: 55em; 
-    height: 20em;
-   }
-        .btn2 {
-    width: 55em; 
-    height: 20em;
-     margin-left: 20em;
-   }
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+        }
+        #cars {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -34,29 +38,20 @@
         <li><a href="index.html">Главная</a></li>
         <li><a href="about us.html">О нас</a></li>
         <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="feedback.html">Обратная связь</a></li>
+        <li><a href="feedback.html">Обратная связь</a></li>
     </ul>
 </nav>
 
-
 <section id="cars">
     <h2>Автомобили</h2>
- <p> <button class="btn" onclick="document.location='bmw.html'" > <img src="pics/bmw.png" alt="bmw" height="80%" width="60%"> </button>
-     <button class="btn2" onclick="document.location='audi.html'"> <img src="pics/audi.png" alt="audi" height="80%" width="60%" > </button>
- <button class="btn" onclick="document.location='hyundai.html'" > <img src="pics/hyundai.png" alt="hyundai" height="80%" width="60%"> </button>
- <button class="btn2" onclick="document.location='ford.html'"> <img src="pics/ford.png" alt="ford" height="80%" width="60%" > </button>
-  <button class="btn" onclick="document.location='honda.html'" > <img src="pics/honda.png" alt="honda" height="80%" width="60%"> </button>
-  <button class="btn2" onclick="document.location='infiniti.html'"> <img src="pics/infiniti.png" alt="infiniti" height="80%" width="60%"> </button>
-<button class="btn" onclick="document.location='kia.html'" > <img src="pics/kia.png" alt="kia" height="80%" width="60%"> </button> 
-<button class="btn2" onclick="document.location='lexus.html'"> <img src="pics/lexus.png" alt="lexus" height="80%" width="60%"> </button> 
-<button class="btn" onclick="document.location='mercedes.html'" > <img src="pics/mercedes.png" alt="mercedes" height="80%" width="60%"> </button> 
- <button class="btn2" onclick="document.location='mitsubishi.html'"> <img src="pics/Mitsubishi.png" alt="mitsubishi" height="80%" width="60%"> </button> </p>
+    <div class="btn-container">
+        <button class="btn" onclick="document.location='ссылка_на_покупку_bmw.html'">
+            <img src="pics/bmw.png" alt="bmw" height="80%" width="60%">
+        </button>
+        <!-- Добавьте аналогичные кнопки для других машин -->
+    </div>
 </section>
-<head>
-    <meta charset="UTF-8">
-    <title>Форма обратной связи</title>
-</head>
-    
+
 <footer>
     <p>&copy; 2024 Автосалон. Все права защищены.</p>
 </footer>
