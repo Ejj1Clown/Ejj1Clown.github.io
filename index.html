@@ -1,158 +1,63 @@
-<html> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автосалон Carhave</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Автосалон</title>
+<style>
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
 
-        header, nav, section, footer {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px;
-        }
+.buttons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
 
-        nav {
-            background: #333;
-            color: white;
-        }
+.models {
+    display: none;
+}
 
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+.models.show {
+    display: block;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
+</style>
+</head>
+<body>
 
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-        }
+<div class="overlay" id="overlay"></div>
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+<div class="buttons">
+    <button>Главная</button>
+    <button>О нас</button>
+    <button>Обратная связь</button>
+    <button>Контакты</button>
+    <button id="selectCarModel">Выбрать модель машины</button>
+</div>
 
-        .row {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+<div class="models" id="models">
+    <button>Марка 1</button>
+    <button>Марка 2</button>
+    <button>Марка 3</button>
+</div>
 
-        .col {
-            width: 25%;
-        }
+<script>
+// При нажатии на кнопку "Выбрать модель машины"
+document.getElementById('selectCarModel').addEventListener('click', function() {
+    let models = document.getElementById('models');
+    models.classList.toggle('show');
+});
+</script>
 
-        .btn {
-            width: 100%;
-            height: 150px;
-            margin: 10px;
-            padding: 10px;
-            background: #333;
-            color: white;
-            text-align: center;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #666;
-        }
-    </style>
-
-
-    <header>
-        <h1>Добро пожаловать в Автосалон Carhave</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about us.html">О нас</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="feedback.html">Обратная связь</a></li>
-        </ul>
-    </nav>
-
-    <section class="container">
-        <h2 class="section-title">Автомобили</h2>
-        <div class="row">
-            <div class="col">
-                <a href="bmw.html" class="btn">
-                    <img src="pics/bmw.png" alt="BMW">
-                    <p>BMW</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="audi.html" class="btn">
-                    <img src="pics/audi.png" alt="Audi">
-                    <p>Audi</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="hyundai.html" class="btn">
-                    <img src="pics/hyundai.png" alt="Hyundai">
-                    <p>Hyundai</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="ford.html" class="btn">
-                    <img src="pics/ford.png" alt="Ford">
-                    <p>Ford</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="honda.html" class="btn">
-                    <img src="pics/honda.png" alt="Honda">
-                    <p>Honda</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="infiniti.html" class="btn">
-                    <img src="pics/infiniti.png" alt="Infiniti">
-                    <p>Infiniti</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="kia.html" class="btn">
-                    <img src="pics/kia.png" alt="Kia">
-                    <p>Kia</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="lexus.html" class="btn">
-                    <img src="pics/lexus.png" alt="Lexus">
-                    <p>Lexus</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="mercedes.html" class="btn">
-                    <img src="pics/mercedes.png" alt="Mercedes-Benz">
-                    <p>Mercedes-Benz</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="mitsubishi.html" class="btn">
-                    <img src="pics/Mitsubishi.png" alt="Mitsubishi">
-                    <p>Mitsubishi</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 Автосалон Carhave. Все права защищены.</p>
-    </footer>
+</body>
 </html>
