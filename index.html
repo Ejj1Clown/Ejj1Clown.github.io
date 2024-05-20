@@ -1,73 +1,67 @@
 <html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Стили для затемненного изображения */
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный цвет */
-      z-index: 1; /* Поверх других элементов */
-      display: none; /* По умолчанию скрыто */
-    }
-    .overlay img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон</title>
+    <style>
+        body { background-image: url('shablon.png');
+      background-attachment: fixed;
+      background-size: cover;font-family: Arial, sans-serif; }
+        header, nav, section, footer { margin: 20px; padding: 10px; }
+        nav { background: #333; color: white; }
+        nav ul { list-style-type: none; }
+        nav ul li { display: inline; margin-right: 10px; }
+        nav a { color: white; text-decoration: none; }
+        footer { background: #333; color: white; text-align: center; }
+        .btn {
+    width: 55em; 
+    height: 20em;
+   }
+        .btn2 {
+    width: 55em; 
+    height: 20em;
+     margin-left: 20em;
+   }
+    </style>
 </head>
 <body>
-      <header>
+
+<header>
     <h1>Добро пожаловать в Автосалон Carhave</h1>
 </header>
-        <header>
-    <nav>
-      <ul>
+
+<nav>
+    <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="about us.html">О нас</a></li>
         <li><a href="contacts.html">Контакты</a></li>
-      <li><a href="feedback.html">Обратная связь</a></li>
-      </ul>
-    </nav>
-  </header>
+          <li><a href="feedback.html">Обратная связь</a></li>
+    </ul>
+</nav>
 
-  <!-- Затемненное изображение -->
-  <div class="overlay">
-    <img src="shablon.png" alt="shablon.png">
-  </div>
 
-  <main>
-    <button onclick="showCarModels()">Выбрать модель машины</button>
-    <div id="carModels" style="display: none;">
-      <!-- 10 кнопок с изображениями моделей машин -->
+<section id="cars">
     <h2>Автомобили</h2>
- <p> <button class="btn" onclick="document.location='bmw.html'" > <img src="pics/bmw.png" alt="bmw" height="50%" width="30%"> </button>
-     <button class="btn2" onclick="document.location='audi.html'"> <img src="pics/audi.png" alt="audi" height="50%" width="30%" > </button>
- <button class="btn" onclick="document.location='hyundai.html'" > <img src="pics/hyundai.png" alt="hyundai" height="50%" width="30%"> </button>
- <button class="btn2" onclick="document.location='ford.html'"> <img src="pics/ford.png" alt="ford" height="50%" width="30%" > </button>
-  <button class="btn" onclick="document.location='honda.html'" > <img src="pics/honda.png" alt="honda" height="50%" width="30%"> </button>
-  <button class="btn2" onclick="document.location='infiniti.html'"> <img src="pics/infiniti.png" alt="infiniti" height="50%" width="30%"> </button>
-<button class="btn" onclick="document.location='kia.html'" > <img src="pics/kia.png" alt="kia" height="50%" width="20%"> </button> 
-<button class="btn2" onclick="document.location='lexus.html'"> <img src="pics/lexus.png" alt="lexus" height="50%" width="30%"> </button> 
-<button class="btn" onclick="document.location='mercedes.html'" > <img src="pics/mercedes.png" alt="mercedes" height="50%" width="30%"> </button> 
- <button class="btn2" onclick="document.location='mitsubishi.html'"> <img src="pics/Mitsubishi.png" alt="mitsubishi" height="50%" width="30%"> </button> </p>
-      <!-- Добавьте остальные кнопки с изображениями моделей машин -->
-    </div>
-  </main>
+ <p> <button class="btn" onclick="document.location='bmw.html'" > <img src="pics/bmw.png" alt="bmw" height="80%" width="60%"> </button>
+     <button class="btn2" onclick="document.location='audi.html'"> <img src="pics/audi.png" alt="audi" height="80%" width="60%" > </button>
+ <button class="btn" onclick="document.location='hyundai.html'" > <img src="pics/hyundai.png" alt="hyundai" height="80%" width="60%"> </button>
+ <button class="btn2" onclick="document.location='ford.html'"> <img src="pics/ford.png" alt="ford" height="80%" width="60%" > </button>
+  <button class="btn" onclick="document.location='honda.html'" > <img src="pics/honda.png" alt="honda" height="80%" width="60%"> </button>
+  <button class="btn2" onclick="document.location='infiniti.html'"> <img src="pics/infiniti.png" alt="infiniti" height="80%" width="60%"> </button>
+<button class="btn" onclick="document.location='kia.html'" > <img src="pics/kia.png" alt="kia" height="80%" width="60%"> </button> 
+<button class="btn2" onclick="document.location='lexus.html'"> <img src="pics/lexus.png" alt="lexus" height="80%" width="60%"> </button> 
+<button class="btn" onclick="document.location='mercedes.html'" > <img src="pics/mercedes.png" alt="mercedes" height="80%" width="60%"> </button> 
+ <button class="btn2" onclick="document.location='mitsubishi.html'"> <img src="pics/Mitsubishi.png" alt="mitsubishi" height="80%" width="60%"> </button> </p>
+</section>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+</head>
+    
+<footer>
+    <p>&copy; 2024 Автосалон. Все права защищены.</p>
+</footer>
 
-  <script>
-    function showCarModels() {
-      document.getElementById('carModels').style.display = 'block';
-      // Прокрутка страницы к блоку с моделями машин
-      document.getElementById('carModels').scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
