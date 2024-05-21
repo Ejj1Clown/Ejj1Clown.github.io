@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Форма обратной связи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
     <style>
-        font-family: "<p style=" font-family: 'Times New Roman', Times, serif", sans-serif;
-                text-align: justify;
-                text-justify: inter-word;
-        body { font-family: Arial, sans-serif; }
         header, nav, section, footer { margin: 20px; padding: 10px; }
         nav { background: #333; color: white; }
         nav ul { list-style-type: none; }
@@ -25,7 +22,6 @@
    }
     </style>
 </head>
-<body>
     <header>
     <h1><i>Carhave</i></h1>
 </header>
@@ -33,18 +29,12 @@
 <nav>
     <ul>
         <li><a href="index.html">Главная</a></li>
-        <li><a href="about">О нас</a></li>
+        <li><a href="aboutus">О нас</a></li>
         <li><a href="contacts">Контакты</a></li>
           <li><a href="feedback.html">Обратная связь</a></li>
     </ul>
 </nav>
-         <section>
-        <h1 align="c"></h1>
-            <p class="text-block"> 
-                <font size="4">
 <h2>Форма обратной связи</h2>
-
-<form action="send_mail.php" method="post">
     <label for="name">Имя:</label><br>
     <input type="text" id="name" name="name" required><br>
     
@@ -55,10 +45,6 @@
     <textarea id="message" name="message" required></textarea><br>
     
     <input type="submit" value="Отправить">
-    </font>
-            </p>
-</form>
-    </section>
    
     <footer>
         <p>&copy; 2024 Автосалон <i>Carhave</i>. Все права защищены.</p>
